@@ -9,7 +9,7 @@ var config = {
       name: 'blood-donation-system-backend'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/blood-donation-system-backend-development'
+    db: process.env.DB_URL || 'mongodb://localhost/blood-donation-system-backend-development'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: 'blood-donation-system-backend'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/blood-donation-system-backend-test'
+    db: process.env.DB_URL || 'mongodb://localhost/blood-donation-system-backend-test'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'blood-donation-system-backend'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/blood-donation-system-backend-production'
+    db: process.env.DB_URL || 'mongodb://localhost/blood-donation-system-backend-production'
   }
 };
 
